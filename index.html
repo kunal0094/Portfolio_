@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="stlye.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" alt="logo" />
+        <ul id="sidemeanu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#protfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemeanu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmeanu()"></i>
+      </nav>
+
+      <div class="header">
+        <div class="header-container">
+          <div class="header-row">
+            <div class="col-1">
+              <p class="sub-text">
+                Hi, I'm <span>Kunal</span>
+                <br> Bisht and I'm a passionate
+                <br>Web Developer....
+              </p>
+            </div>
+            <div class="col-2">
+
+              <img
+                src="3d-work-with-software-man-writes-code-computer-develops-program-website-application-programmer-it-specialist-work_1240525-10787.avif" />
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- --------------about--------- -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="first-img.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hi! I’m Kunal Bisht, a MERN and frontend developer passionate about crafting intuitive, user-friendly web
+            experiences. I blend creativity with technology to build dynamic websites and apps. Always eager to learn
+            and grow, I enjoy exploring new trends and collaborating on exciting projects. Let’s connect and create
+            something great!
+
+
+
+
+
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>Frontend Developer</span><br />HTML,CSS,Javascript</li>
+              <li>
+                <span>MERN Development</span><br />MongoDB,React.JS,Express,Node.js
+              </li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Web Developer (Internship)</span><br> MotionCut (sept 2024)</li>
+              <li>
+                <span>Web Development (Internship)</span><br />VaultofCodes (sept 2024)
+              </li>
+
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021</span><br />Class-12th (80%)</li>
+              <li>
+                <span>2023</span><br />Web
+                Development
+              </li>
+              <li>
+                <span>2024</span><br />Graduation From Delhi University(1st Division)
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------services---------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Frontend Frameworks</h2>
+          <p>
+
+            The frontend stack refers to the technologies and tools used to build the client side of a web application,
+            which users interact with directly. This typically includes HTML, CSS, and JavaScript, along with frameworks
+            and libraries like React for creating the user interface and managing user interactions.
+          </p>
+          <a href="https://www.simform.com/blog/best-frontend-frameworks/">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>MERN-Stack Development</h2>
+          <p>
+
+            The MERN stack is a set of technologies used to build web applications: MongoDB for the database, Express.js
+            for the backend server, React.js for the frontend interface, and Node.js for running the server-side code.
+          </p>
+          <a href="https://www.mongodb.com/resources/languages/mern-stack?msockid=0a905f3d680e66a41d4b4c5569ac6763">Learn
+            More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Deploy Website</h2>
+          <p>
+            Deploying applications means taking a finished website or web app and making it accessible to users on the
+            internet. This involves setting it up on a server, configuring it, and ensuring it runs smoothly online.
+          </p>
+          <a
+            href="https://umbraco.com/knowledge-base/deployment/#:~:text=Deploying%20a%20website%20means%20that,%2C%20staging%2C%20or%20live).">Learn
+            More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------portfolio------------------------ -->
+
+  <div id="protfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="university_logo.jpg" />
+          <div class="layer">
+            <h3>University Website </h3>
+            <p>
+
+              Key frontend projects for a university website include a dynamic homepage, intuitive navigation, detailed
+              department pages, event calendar, admissions portal, student portal, faculty directory, campus map,
+              contact/support pages, and news section, all ensuring accessibility and responsiveness.
+            </p>
+            <a href=" https://kunal0094.github.io/University-website/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="barber_logo.jpg" />
+          <div class="layer">
+            <h3>Barber website</h3>
+            <p>
+              A barber website frontend should feature a stylish homepage, service listings, appointment booking,
+              stylist profiles, gallery of work, customer reviews, and contact information, all designed with a
+              user-friendly, responsive layout to attract and engage clients.
+            </p>
+            <a href="https://kunal0094.github.io/barber-website/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="free_lancer.png" />
+          <div class="layer">
+            <h3>Freelancer website</h3>
+            <p>
+
+              A freelancer website frontend should include a sleek homepage, freelancer profiles, project portfolios,
+              job listings, client reviews, and contact forms, all designed to be intuitive, visually appealing, and
+              responsive for both freelancers and clients.
+            </p>
+            <a href="https://kunal0094.github.io/Freelancer_website/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="net1.jpg" />
+          <div class="layer">
+            <h3>Netflix Clone</h3>
+            <p>
+              A Netflix clone frontend should feature a sleek homepage with trending content, a search bar, category
+              filters, user profiles, video playback, and responsive design, providing a seamless, engaging viewing
+              experience
+            </p>
+            <a href=" https://kunal0094.github.io/netflix-clone/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="e-comme.png" />
+          <div class="layer">
+            <h3>E-Commerce Website</h3>
+            <p>
+              The e-commerce website frontend is a user-friendly interface designed to showcase products, enable
+              seamless navigation, and facilitate smooth transactions. It typically features a visually appealing
+              layout, intuitive search and filter options, product detail pages, a shopping cart, and secure checkout
+              processes to enhance the shopping experience.
+            </p>
+            <a href=" https://kunal0094.github.io/e-commerce-/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="fashion.png" />
+          <div class="layer">
+            <h3>Fashion Website</h3>
+            <p>
+              The fashion website frontend is a stylish and visually engaging interface that highlights trends and
+              collections. It features high-quality images, easy navigation, and interactive elements like filters and
+              sorting options, all designed to create an immersive and seamless shopping experience for fashion
+              enthusiasts.
+            </p>
+            <a href=" https://kunal0094.github.io/Fashion_Website/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/kunal0094?tab=repositories" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- ----------------------------contact---------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-regular fa-envelope"></i> kunalbisht841@gmail.com
+          </p>
+          <p><i class="fa-solid fa-square-phone"></i> 7042078421</p>
+          <div class="social-icon">
+            <a href="https://github.com/kunal0094"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/kunal-bisht-aa5645321/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Kunal_bisht_Resume (3) (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="hidden" name="access_key" value="28aa4793-0766-4df3-ab47-3d86622aed39">
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="Meassage" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
